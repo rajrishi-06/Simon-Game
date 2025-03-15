@@ -1,0 +1,113 @@
+body {
+    background: url('images/space-bg.jpg') no-repeat center center fixed;
+    background-size: cover;
+    height: 100vh;
+    margin: 0;
+    color: #fff;
+    background-color: #000;
+}
+
+#title {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    font-family: 'Orbitron', sans-serif;
+    margin-top: 20px;
+}
+
+#title h1 {
+    color: #e2dda4;
+    font-size: clamp(2rem, 7vw, 5rem);
+    text-shadow: 0 0 10px rgba(255,255,255,0.8);
+}
+
+#game {
+    margin: 0 0 50px 0;
+}
+
+.top-blocks {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+.inline-img {
+    display: inline;
+    height: 2em;
+    vertical-align: middle;
+}
+
+.bottom-blocks {
+    margin-top: 25px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+.block {
+    height: 200px;
+    width: 200px; 
+    border: 10px solid #fff;
+    border-radius: 25%;
+    text-align: center;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 2.5rem;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    transition: transform 0.2s ease-in-out;
+}
+
+.block:hover {
+    transform: scale(1.05);
+}
+
+.block-1 {
+    background: radial-gradient(circle, #FFD700, #FFB900);
+}
+
+.block-2 {
+    background: radial-gradient(circle, #9B30FF, #7A00FF);
+}
+
+.block-3 {
+    background: radial-gradient(circle, #00FFFF, #00CED1);
+}
+
+.block-4 {
+    background: radial-gradient(circle, #7FFF00, #32CD32);
+}
+
+.block h1 {
+    font-weight: bolder;
+    color: #fcf9f9;
+    text-shadow: 0 0 5px #000;
+}
+
+.blink {
+    opacity: 0.5;
+    transition: opacity 0.3s ease-in-out;
+}
+
+@media (max-width: 567px) {
+    .top-blocks {
+        flex-direction: column;
+        align-items: center;
+    }
+    .bottom-blocks {
+        margin-top: 25px;
+        flex-direction: column;
+        align-items: center;
+    }
+    .block {
+        height: 125px;
+        width: 125px;
+        font-size: 1.5rem;
+    }
+    #game {
+        margin-top: 10px;
+    }
+    .inline-img {
+        height: 100px;
+    }
+}
