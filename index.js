@@ -98,7 +98,7 @@ function processInput(event) {
 function gameOver() {
     let wrongAudio = new Audio("sounds/wrong.mp3");
     wrongAudio.play();
-    $('#title h1').text("Game Over !!!<br>Press Space to Restart");
+    $('#title h1').text("Game Over !!! Press Space to Restart");
     
     gameStarted = false;
     inputEnabled = false;
